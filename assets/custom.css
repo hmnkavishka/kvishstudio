@@ -1,0 +1,46 @@
+/* Kvish Studio — shared custom styles (used with Tailwind CDN) */
+
+::selection{ background:#FF4D00; color:#fff; }
+html{ scroll-behavior:smooth; }
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+.reveal.in{ opacity:1; transform:none; }
+
+/* strike-through accent in headlines */
+.strike{ position:relative; color:#4d4d4d; white-space:nowrap; }
+.strike::after{
+  content:""; position:absolute; left:-2%; right:-2%; top:52%;
+  height:.09em; background:#FF4D00; transform:rotate(-2deg); border-radius:99px;
+}
+
+/* ticker */
+.ticker-track{ display:flex; gap:46px; width:max-content; animation:tick 22s linear infinite; }
+@keyframes tick{ to{ transform:translateX(-50%);} }
+
+/* FAQ accordion */
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .4s ease; }
+.faq.open .faq-a{ max-height:260px; }
+.faq .plus{ transition:transform .3s, background .3s; }
+.faq.open .plus{ transform:rotate(45deg); background:#FF4D00; border-color:#FF4D00; }
+
+/* project modal pop */
+@keyframes pop{ from{ transform:scale(.94) translateY(14px); opacity:0; } }
+.modal-card{ animation:pop .35s cubic-bezier(.2,.9,.3,1.2); }
+body.modal-open{ overflow:hidden; }
+
+/* decorative grid placeholder for project thumbs */
+.ph-grid::after{
+  content:""; position:absolute; inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:42px 42px;
+  -webkit-mask-image:radial-gradient(circle at 60% 40%,#000 30%,transparent 75%);
+  mask-image:radial-gradient(circle at 60% 40%,#000 30%,transparent 75%);
+}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{ opacity:1; transform:none; transition:none; }
+  .ticker-track{ animation:none; }
+  html{ scroll-behavior:auto; }
+}

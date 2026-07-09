@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kvish Studio</title>
+<meta name="description" content="Contact Kvish Studio — reply within 24 hours with honest advice and a fixed price. WhatsApp, email, Sinhala or English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors:{ brand:'#FF4D00', brandsoft:'#FF7A33', ink:'#0B0B0B', panel:'#141414', panel2:'#1B1B1B', linec:'#262626', muted:'#8F8F8F', paper:'#F4F2ED', paperline:'#DDD9D0', inkmuted:'#5c5952' },
+  fontFamily:{ sans:['Archivo','sans-serif'] }
+}}}
+</script>
+<link rel="stylesheet" href="assets/custom.css">
+</head>
+<body class="bg-ink text-[#F2F2F2] font-sans antialiased">
+<!-- ================= NAV ================= -->
+<header class="sticky top-0 z-50 bg-ink/80 backdrop-blur-md border-b border-linec">
+  <div class="max-w-6xl mx-auto w-[92%] h-[76px] flex items-center justify-between">
+    <a href="index.html" class="font-extrabold text-xl tracking-tight">Kvish<span class="text-brand">.</span>Studio</a>
+    <nav class="hidden md:flex gap-7 text-[15px] text-muted">
+      <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+      <a href="work.html" class="hover:text-white transition">Work</a>
+      <a href="about.html" class="hover:text-white transition">About</a>
+      <a href="contact.html" class="hover:text-white transition">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-brandsoft text-white font-semibold text-[15px] rounded-full px-6 py-3 transition">Get a Website ↗</a>
+    <button id="burger" class="md:hidden text-2xl" aria-label="Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden bg-ink border-b border-linec px-[6%] py-6 flex flex-col gap-4 text-muted">
+    <a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="work.html">Work</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="relative overflow-hidden pb-28">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(700px 460px at 85% 10%,rgba(255,77,0,.18),transparent 65%);"></div>
+  <div class="relative max-w-6xl mx-auto w-[92%] pt-24">
+    <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Contact</span>
+    <h1 class="reveal mt-5 font-extrabold tracking-[-0.04em] leading-[1.0] text-5xl md:text-7xl">Let's build yours</h1>
+    <p class="reveal mt-6 text-muted text-lg max-w-2xl leading-relaxed">Tell us about your business — we reply within 24 hours with honest advice and a fixed price. සිංහලෙන් ලිව්වත් කමක් නෑ. 😊</p>
+
+    <div class="reveal mt-12 relative overflow-hidden bg-panel border border-linec rounded-3xl p-8 md:p-14">
+      <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(520px 340px at 90% 0%,rgba(255,77,0,.14),transparent 65%);"></div>
+      <div class="relative grid md:grid-cols-2 gap-11">
+        <div>
+          <h2 class="font-bold tracking-tight text-3xl">Fastest ways to reach us</h2>
+          <div class="mt-7 grid gap-3.5">
+            <a href="#" class="js-wa flex items-center gap-4 bg-panel2 border border-linec hover:border-[#3a3a3a] rounded-2xl px-5 py-4.5 p-5 transition hover:translate-x-1">
+              <span class="text-2xl">💬</span>
+              <span><span class="block text-muted text-[13px]">Fastest — WhatsApp</span><strong class="js-wa-number">+94 7X XXX XXXX</strong></span>
+            </a>
+            <a href="#" class="js-mail flex items-center gap-4 bg-panel2 border border-linec hover:border-[#3a3a3a] rounded-2xl px-5 p-5 transition hover:translate-x-1">
+              <span class="text-2xl">✉️</span>
+              <span><span class="block text-muted text-[13px]">Email</span><strong class="js-mail-label">hello@kvishstudio.com</strong></span>
+            </a>
+            <div class="flex items-center gap-4 bg-panel2 border border-linec rounded-2xl px-5 p-5">
+              <span class="text-2xl">📍</span>
+              <span><span class="block text-muted text-[13px]">Based in</span><strong>Negombo, Sri Lanka — working worldwide</strong></span>
+            </div>
+          </div>
+          <div class="mt-8 bg-panel2 border border-linec rounded-2xl p-5 text-[15px] text-muted leading-relaxed">
+            ⏱️ <strong class="text-white">Reply within 24 hours</strong> — usually much faster. If we think you don't need the expensive plan, we'll say so.
+          </div>
+        </div>
+
+        <form id="contactForm">
+          <div class="mt-0">
+            <label for="name" class="block font-semibold mb-2.5">Your Name</label>
+            <input type="text" id="name" required placeholder="Enter your name"
+              class="w-full bg-transparent border-0 border-b border-[#3a3a3a] focus:border-brand outline-none py-2.5 placeholder-[#5b5b5b] transition">
+          </div>
+          <div class="mt-7">
+            <label for="biz" class="block font-semibold mb-2.5">Business / Facebook Page</label>
+            <input type="text" id="biz" placeholder="e.g. Negombo Beach Café"
+              class="w-full bg-transparent border-0 border-b border-[#3a3a3a] focus:border-brand outline-none py-2.5 placeholder-[#5b5b5b] transition">
+          </div>
+          <div class="mt-7">
+            <label for="msg" class="block font-semibold mb-2.5">What do you need?</label>
+            <textarea id="msg" rows="3" required placeholder="e.g. A website for my restaurant with the menu and WhatsApp ordering"
+              class="w-full bg-transparent border-0 border-b border-[#3a3a3a] focus:border-brand outline-none py-2.5 placeholder-[#5b5b5b] transition resize-y"></textarea>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <button type="button" class="chip border border-[#3a3a3a] text-muted rounded-full px-5 py-2.5 text-sm transition hover:border-white hover:text-white">Starter — Rs. 25,000</button>
+            <button type="button" class="chip border border-[#3a3a3a] text-muted rounded-full px-5 py-2.5 text-sm transition hover:border-white hover:text-white">Business — Rs. 55,000</button>
+            <button type="button" class="chip border border-[#3a3a3a] text-muted rounded-full px-5 py-2.5 text-sm transition hover:border-white hover:text-white">Pro / Store — Rs. 100,000+</button>
+            <button type="button" class="chip border border-[#3a3a3a] text-muted rounded-full px-5 py-2.5 text-sm transition hover:border-white hover:text-white">Not sure yet</button>
+          </div>
+          <div class="mt-9 flex flex-wrap items-center gap-4">
+            <button type="submit" class="inline-flex items-center gap-2 bg-[#1ebe57] hover:bg-[#25d366] text-white font-semibold rounded-full px-7 py-3.5 transition">Send via WhatsApp 💬</button>
+            <span class="text-muted text-sm">Opens WhatsApp with your message ready to send.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-linec pt-12 pb-10">
+  <div class="text-center font-extrabold tracking-[-0.045em] leading-none text-[#1d1d1d] select-none text-6xl md:text-9xl mb-9">KVISH STUDIO</div>
+  <div class="max-w-6xl mx-auto w-[92%] flex flex-wrap items-center justify-between gap-4 text-muted text-sm">
+    <div class="flex gap-5">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="hover:text-brand transition">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="hover:text-brand transition">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="hover:text-brand transition">LinkedIn</a>
+    </div>
+    <div>© <span class="js-year"></span> Kvish Studio · Founded by <a href="about.html" class="text-brand">Nadun Kvish</a></div>
+    <a href="#" onclick="scrollTo({top:0,behavior:'smooth'});return false;" class="hover:text-white transition">Back to top ↑</a>
+  </div>
+</footer>
+
+<a href="#" class="js-wa fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white text-2xl grid place-items-center shadow-2xl hover:scale-110 transition" aria-label="Chat on WhatsApp">💬</a>
+<a href="#" class="js-wa fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white text-2xl grid place-items-center shadow-2xl hover:scale-110 transition" aria-label="Chat on WhatsApp">💬</a>
+<script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Kvish Studio</title>
+<meta name="description" content="Business websites, online stores, branding and AI-powered design — with transparent prices and fast delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors:{ brand:'#FF4D00', brandsoft:'#FF7A33', ink:'#0B0B0B', panel:'#141414', panel2:'#1B1B1B', linec:'#262626', muted:'#8F8F8F', paper:'#F4F2ED', paperline:'#DDD9D0', inkmuted:'#5c5952' },
+  fontFamily:{ sans:['Archivo','sans-serif'] }
+}}}
+</script>
+<link rel="stylesheet" href="assets/custom.css">
+</head>
+<body class="bg-ink text-[#F2F2F2] font-sans antialiased">
+<!-- ================= NAV ================= -->
+<header class="sticky top-0 z-50 bg-ink/80 backdrop-blur-md border-b border-linec">
+  <div class="max-w-6xl mx-auto w-[92%] h-[76px] flex items-center justify-between">
+    <a href="index.html" class="font-extrabold text-xl tracking-tight">Kvish<span class="text-brand">.</span>Studio</a>
+    <nav class="hidden md:flex gap-7 text-[15px] text-muted">
+      <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+      <a href="work.html" class="hover:text-white transition">Work</a>
+      <a href="about.html" class="hover:text-white transition">About</a>
+      <a href="contact.html" class="hover:text-white transition">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-brandsoft text-white font-semibold text-[15px] rounded-full px-6 py-3 transition">Get a Website ↗</a>
+    <button id="burger" class="md:hidden text-2xl" aria-label="Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden bg-ink border-b border-linec px-[6%] py-6 flex flex-col gap-4 text-muted">
+    <a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="work.html">Work</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(700px 460px at 85% 10%,rgba(255,77,0,.18),transparent 65%);"></div>
+  <div class="relative max-w-6xl mx-auto w-[92%] pt-24 pb-16">
+    <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Services</span>
+    <h1 class="reveal mt-5 font-extrabold tracking-[-0.04em] leading-[1.0] text-5xl md:text-7xl max-w-3xl">Everything your business needs online</h1>
+    <p class="reveal mt-6 text-muted text-lg max-w-2xl leading-relaxed">Four services, one promise: fixed prices, fixed dates, updates every 2 days.</p>
+  </div>
+</section>
+
+<section class="pb-28">
+  <div class="max-w-6xl mx-auto w-[92%] grid gap-6">
+
+    <div id="websites" class="reveal bg-panel border border-linec rounded-3xl p-8 md:p-12 grid md:grid-cols-[1fr_1.2fr] gap-8">
+      <div>
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🌐</div>
+        <h2 class="font-bold tracking-tight text-3xl md:text-4xl">Business Websites</h2>
+        <p class="mt-3 text-muted leading-relaxed">Your 24/7 salesperson. A fast, mobile-perfect website that makes your business look established and turns visitors into calls, bookings and WhatsApp messages.</p>
+        <a href="pricing.html" class="mt-6 inline-flex items-center gap-2 text-brand font-semibold">From Rs. 25,000 → see pricing</a>
+      </div>
+      <ul class="grid sm:grid-cols-2 gap-3 text-[15px] content-start">
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Mobile-first design</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ WhatsApp &amp; call buttons</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Google Maps integration</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Contact &amp; booking forms</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Basic SEO — get found</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Speed optimized</li>
+      </ul>
+    </div>
+
+    <div id="stores" class="reveal bg-panel border border-linec rounded-3xl p-8 md:p-12 grid md:grid-cols-[1fr_1.2fr] gap-8">
+      <div>
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🛒</div>
+        <h2 class="font-bold tracking-tight text-3xl md:text-4xl">Online Stores</h2>
+        <p class="mt-3 text-muted leading-relaxed">Sell island-wide or worldwide. Product pages, cart, delivery details and payment options your customers already trust — built to convert.</p>
+        <a href="pricing.html" class="mt-6 inline-flex items-center gap-2 text-brand font-semibold">From Rs. 100,000 → see pricing</a>
+      </div>
+      <ul class="grid sm:grid-cols-2 gap-3 text-[15px] content-start">
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Product catalog &amp; cart</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Payment gateway setup</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Order via WhatsApp option</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Delivery zones &amp; charges</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Admin training included</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Full SEO setup</li>
+      </ul>
+    </div>
+
+    <div id="branding" class="reveal bg-panel border border-linec rounded-3xl p-8 md:p-12 grid md:grid-cols-[1fr_1.2fr] gap-8">
+      <div>
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🎨</div>
+        <h2 class="font-bold tracking-tight text-3xl md:text-4xl">Branding &amp; Design</h2>
+        <p class="mt-3 text-muted leading-relaxed">First impressions decide. Logos, color systems and social media kits that make a small business look like a big one — consistent everywhere.</p>
+        <a href="contact.html" class="mt-6 inline-flex items-center gap-2 text-brand font-semibold">Ask for a branding quote →</a>
+      </div>
+      <ul class="grid sm:grid-cols-2 gap-3 text-[15px] content-start">
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Logo design (3 concepts)</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Color &amp; typography system</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Social media post kit</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Business card design</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Brand guideline PDF</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ All source files yours</li>
+      </ul>
+    </div>
+
+    <div id="ai" class="reveal bg-panel border border-linec rounded-3xl p-8 md:p-12 grid md:grid-cols-[1fr_1.2fr] gap-8">
+      <div>
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🤖</div>
+        <h2 class="font-bold tracking-tight text-3xl md:text-4xl">AI-Powered Workflow</h2>
+        <p class="mt-3 text-muted leading-relaxed">This is our edge. We combine human design craft with AI tools for concepts, content and code — so you get agency quality at small-business speed and price.</p>
+        <a href="about.html" class="mt-6 inline-flex items-center gap-2 text-brand font-semibold">How we work →</a>
+      </div>
+      <ul class="grid sm:grid-cols-2 gap-3 text-[15px] content-start">
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Faster concept exploration</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ AI-assisted copywriting</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Image enhancement</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Lower cost, same quality</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ Human review on everything</li>
+        <li class="bg-panel2 border border-linec rounded-xl px-5 py-4">✓ 7–14 day delivery possible</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-linec pt-12 pb-10">
+  <div class="text-center font-extrabold tracking-[-0.045em] leading-none text-[#1d1d1d] select-none text-6xl md:text-9xl mb-9">KVISH STUDIO</div>
+  <div class="max-w-6xl mx-auto w-[92%] flex flex-wrap items-center justify-between gap-4 text-muted text-sm">
+    <div class="flex gap-5">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="hover:text-brand transition">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="hover:text-brand transition">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="hover:text-brand transition">LinkedIn</a>
+    </div>
+    <div>© <span class="js-year"></span> Kvish Studio · Founded by <a href="about.html" class="text-brand">Nadun Kvish</a></div>
+    <a href="#" onclick="scrollTo({top:0,behavior:'smooth'});return false;" class="hover:text-white transition">Back to top ↑</a>
+  </div>
+</footer>
+
+<a href="#" class="js-wa fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white text-2xl grid place-items-center shadow-2xl hover:scale-110 transition" aria-label="Chat on WhatsApp">💬</a>
+<a href="#" class="js-wa fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white text-2xl grid place-items-center shadow-2xl hover:scale-110 transition" aria-label="Chat on WhatsApp">💬</a>
+<script src="assets/main.js"></script>
+</body>
+</html>

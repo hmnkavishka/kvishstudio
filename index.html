@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kvish Studio — Websites without the agency headaches</title>
+<meta name="description" content="Kvish Studio builds websites for small businesses. Transparent prices, 7-day delivery, updates every 2 days, support after launch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors:{ brand:'#FF4D00', brandsoft:'#FF7A33', ink:'#0B0B0B', panel:'#141414', panel2:'#1B1B1B', linec:'#262626', muted:'#8F8F8F', paper:'#F4F2ED', paperline:'#DDD9D0', inkmuted:'#5c5952' },
+  fontFamily:{ sans:['Archivo','sans-serif'] }
+}}}
+</script>
+<link rel="stylesheet" href="assets/custom.css">
+</head>
+<body class="bg-ink text-[#F2F2F2] font-sans antialiased">
+
+<!-- ================= NAV ================= -->
+<header class="sticky top-0 z-50 bg-ink/80 backdrop-blur-md border-b border-linec">
+  <div class="max-w-6xl mx-auto w-[92%] h-[76px] flex items-center justify-between">
+    <a href="index.html" class="font-extrabold text-xl tracking-tight">Kvish<span class="text-brand">.</span>Studio</a>
+    <nav class="hidden md:flex gap-7 text-[15px] text-muted">
+      <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+      <a href="work.html" class="hover:text-white transition">Work</a>
+      <a href="about.html" class="hover:text-white transition">About</a>
+      <a href="contact.html" class="hover:text-white transition">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand hover:bg-brandsoft text-white font-semibold text-[15px] rounded-full px-6 py-3 transition">Get a Website ↗</a>
+    <button id="burger" class="md:hidden text-2xl" aria-label="Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden bg-ink border-b border-linec px-[6%] py-6 flex flex-col gap-4 text-muted">
+    <a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="work.html">Work</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none"
+       style="background:radial-gradient(700px 460px at 85% 10%,rgba(255,77,0,.22),transparent 65%),radial-gradient(520px 380px at 5% 95%,rgba(255,77,0,.10),transparent 60%);"></div>
+  <div class="relative max-w-6xl mx-auto w-[92%] pt-24 pb-20 md:pt-32 md:pb-28">
+    <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]">
+      <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Design &amp; development studio — Sri Lanka 🇱🇰 · Worldwide 🌍
+    </span>
+    <h1 class="reveal mt-6 font-extrabold leading-[1.0] tracking-[-0.04em] text-5xl md:text-7xl lg:text-8xl max-w-4xl">
+      Websites without <span class="strike">the agency headaches</span>
+    </h1>
+    <p class="reveal mt-7 text-muted text-lg leading-relaxed max-w-2xl">
+      Hidden prices, missed deadlines, no replies, abandoned after launch — we started Kvish Studio to be the opposite.
+      <strong class="text-white">Prices on our site. Sites in 7–14 days. Updates every 2 days. Support that doesn't disappear.</strong>
+    </p>
+    <div class="reveal mt-10 flex flex-wrap gap-4">
+      <a href="pricing.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brandsoft hover:-translate-y-0.5 text-white font-semibold rounded-full px-7 py-3.5 transition">See Prices — No Quote Needed ↗</a>
+      <a href="#" class="js-wa inline-flex items-center gap-2 bg-[#1ebe57] hover:bg-[#25d366] hover:-translate-y-0.5 text-white font-semibold rounded-full px-7 py-3.5 transition">💬 WhatsApp Us</a>
+    </div>
+    <p class="reveal mt-6 text-muted text-[15px]">සිංහලෙන් හෝ English වලින් — කැමති විදිහට කතා කරමු.</p>
+  </div>
+</section>
+
+<!-- ================= PROMISES ================= -->
+<section class="pb-24">
+  <div class="max-w-6xl mx-auto w-[92%]">
+    <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>The Kvish Promise</span>
+    <h2 class="reveal mt-4 font-bold tracking-[-0.035em] leading-tight text-4xl md:text-6xl">Four things clients hate.<br>Four things we fixed.</h2>
+    <div class="reveal mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-panel border border-linec rounded-2xl p-7">
+        <span class="inline-block text-[13px] text-muted border border-linec rounded-full px-3.5 py-1.5 mb-10"><s class="text-[#6a6a6a]">"Call us for a quote"</s></span>
+        <h3 class="font-bold text-xl leading-snug">Prices are <span class="text-brand">public</span></h3>
+        <p class="mt-3 text-muted text-[15px] leading-relaxed">Every package and price is on our pricing page. No hidden fees, no surprise invoices.</p>
+      </div>
+      <div class="bg-panel border border-linec rounded-2xl p-7">
+        <span class="inline-block text-[13px] text-muted border border-linec rounded-full px-3.5 py-1.5 mb-10"><s class="text-[#6a6a6a]">"It'll be ready... soon"</s></span>
+        <h3 class="font-bold text-xl leading-snug">Deadlines in <span class="text-brand">writing</span></h3>
+        <p class="mt-3 text-muted text-[15px] leading-relaxed">Starter sites in 7 days, business sites in 14 — the date goes in your agreement.</p>
+      </div>
+      <div class="bg-panel border border-linec rounded-2xl p-7">
+        <span class="inline-block text-[13px] text-muted border border-linec rounded-full px-3.5 py-1.5 mb-10"><s class="text-[#6a6a6a]">Radio silence for weeks</s></span>
+        <h3 class="font-bold text-xl leading-snug">Updates every <span class="text-brand">2 days</span></h3>
+        <p class="mt-3 text-muted text-[15px] leading-relaxed">A WhatsApp progress message every two days — plain Sinhala or English, no jargon.</p>
+      </div>
+      <div class="bg-panel border border-linec rounded-2xl p-7">
+        <span class="inline-block text-[13px] text-muted border border-linec rounded-full px-3.5 py-1.5 mb-10"><s class="text-[#6a6a6a]">Gone after launch</s></span>
+        <h3 class="font-bold text-xl leading-snug">Support that <span class="text-brand">stays</span></h3>
+        <p class="mt-3 text-muted text-[15px] leading-relaxed">Care Plans keep your site updated, backed up and growing — from Rs. 3,000/month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7-DAY OFFER ================= -->
+<section class="pb-24">
+  <div class="max-w-6xl mx-auto w-[92%]">
+    <div class="reveal bg-brand text-white rounded-3xl overflow-hidden">
+      <div class="grid md:grid-cols-[1.4fr_.8fr] gap-8 items-center p-9 md:p-14">
+        <div>
+          <h2 class="font-extrabold tracking-[-0.035em] leading-[1.05] text-4xl md:text-5xl">Running your business on a Facebook page?</h2>
+          <p class="mt-4 text-white/90 text-[17px] leading-relaxed max-w-xl">A Facebook page isn't yours — algorithms change, reach drops, and customers who Google you find nothing.
+          We turn your page into a real website — menu, services, photos, reviews and a WhatsApp button — live in 7 days.</p>
+          <a href="contact.html" class="mt-7 inline-flex items-center gap-2 border border-white rounded-full px-7 py-3.5 font-semibold hover:bg-white hover:text-brand transition">Turn My Page Into a Website ↗</a>
+        </div>
+        <div class="text-center font-extrabold leading-[0.85] tracking-[-0.06em] text-[120px] md:text-[180px]" style="text-shadow:0 10px 60px rgba(0,0,0,.25);">7
+          <span class="block text-lg md:text-xl font-semibold tracking-[0.14em] mt-2">DAYS. THAT'S IT.</span>
+        </div>
+      </div>
+      <div class="border-t border-white/35 py-3.5 overflow-hidden">
+        <div class="ticker-track text-[15px] font-semibold tracking-wider text-white/95">
+          <span>FACEBOOK → WEBSITE</span><span>●</span><span>7-DAY DELIVERY</span><span>●</span>
+          <span>PRICE ON OUR SITE</span><span>●</span><span>WHATSAPP UPDATES</span><span>●</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES PREVIEW ================= -->
+<section class="pb-24">
+  <div class="max-w-6xl mx-auto w-[92%]">
+    <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>What we build</span>
+    <h2 class="reveal mt-4 font-bold tracking-[-0.035em] text-4xl md:text-6xl">One studio, everything digital</h2>
+    <div class="reveal mt-11 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="services.html#websites" class="group bg-panel border border-linec hover:border-[#3a3a3a] rounded-2xl p-7 transition hover:-translate-y-1">
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🌐</div>
+        <h3 class="font-bold text-xl">Business Websites</h3>
+        <p class="mt-2.5 text-muted text-[15px] leading-relaxed">Fast, mobile-perfect sites that turn visitors into calls and bookings.</p>
+      </a>
+      <a href="services.html#stores" class="group bg-panel border border-linec hover:border-[#3a3a3a] rounded-2xl p-7 transition hover:-translate-y-1">
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🛒</div>
+        <h3 class="font-bold text-xl">Online Stores</h3>
+        <p class="mt-2.5 text-muted text-[15px] leading-relaxed">Sell island-wide or worldwide with cart and trusted payment options.</p>
+      </a>
+      <a href="services.html#branding" class="group bg-panel border border-linec hover:border-[#3a3a3a] rounded-2xl p-7 transition hover:-translate-y-1">
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🎨</div>
+        <h3 class="font-bold text-xl">Branding &amp; Design</h3>
+        <p class="mt-2.5 text-muted text-[15px] leading-relaxed">Logos, colors and social kits that make a small business look established.</p>
+      </a>
+      <a href="services.html#ai" class="group bg-panel border border-linec hover:border-[#3a3a3a] rounded-2xl p-7 transition hover:-translate-y-1">
+        <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl mb-5 bg-gradient-to-br from-brandsoft to-brand">🤖</div>
+        <h3 class="font-bold text-xl">AI-Powered Workflow</h3>
+        <p class="mt-2.5 text-muted text-[15px] leading-relaxed">Human craft + AI speed = agency quality at small-business prices.</p>
+      </a>
+    </div>
+    <a href="services.html" class="reveal mt-9 inline-flex items-center gap-2 text-[15px] font-semibold text-white hover:text-brand transition">Explore all services →</a>
+  </div>
+</section>
+
+<!-- ================= PRICING TEASER (lights on) ================= -->
+<section class="pb-24">
+  <div class="max-w-6xl mx-auto w-[92%]">
+    <div class="reveal bg-paper text-[#101010] rounded-3xl p-9 md:p-14 grid md:grid-cols-[1.2fr_.8fr] gap-8 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2.5 text-inkmuted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Pricing</span>
+        <h2 class="mt-4 font-bold tracking-[-0.035em] leading-tight text-4xl md:text-5xl">Lights on.<br>Nothing hidden.</h2>
+        <p class="mt-4 text-inkmuted text-[17px] leading-relaxed max-w-md">The only bright section on our site — because transparency should stand out. Packages from <strong class="text-[#101010]">Rs. 25,000</strong>, delivery dates in writing.</p>
+        <a href="pricing.html" class="mt-7 inline-flex items-center gap-2 bg-brand hover:bg-brandsoft text-white font-semibold rounded-full px-7 py-3.5 transition">See All Prices ↗</a>
+      </div>
+      <div class="grid gap-3">
+        <div class="bg-white border border-paperline rounded-2xl px-6 py-5 flex items-center justify-between">
+          <div><div class="font-bold">Starter</div><div class="text-inkmuted text-sm">7-day delivery</div></div>
+          <div class="font-extrabold text-2xl tracking-tight">Rs. 25,000</div>
+        </div>
+        <div class="bg-white border-2 border-brand rounded-2xl px-6 py-5 flex items-center justify-between shadow-lg shadow-brand/10">
+          <div><div class="font-bold">Business ⭐</div><div class="text-inkmuted text-sm">14-day delivery</div></div>
+          <div class="font-extrabold text-2xl tracking-tight">Rs. 55,000</div>
+        </div>
+        <div class="bg-white border border-paperline rounded-2xl px-6 py-5 flex items-center justify-between">
+          <div><div class="font-bold">Pro / Store</div><div class="text-inkmuted text-sm">21–30 days</div></div>
+          <div class="font-extrabold text-2xl tracking-tight">Rs. 100,000+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ (short) ================= -->
+<section class="pb-24">
+  <div class="max-w-6xl mx-auto w-[92%]">
+    <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>FAQs</span>
+    <h2 class="reveal mt-4 font-bold tracking-[-0.035em] text-4xl md:text-6xl">Questions clients actually ask</h2>
+    <div class="reveal mt-10 max-w-3xl">
+      <div class="faq open border-b border-linec py-7">
+        <button class="faq-q w-full flex items-center justify-between gap-5 text-left font-semibold text-lg md:text-2xl tracking-tight">
+          Are these really the final prices?
+          <span class="plus shrink-0 w-11 h-11 rounded-full border border-[#3a3a3a] grid place-items-center text-lg font-normal">+</span>
+        </button>
+        <div class="faq-a text-muted leading-relaxed"><p class="pt-4 max-w-2xl">Yes — packages cover everything listed. The only extras are things you buy directly (like your domain, ~Rs. 3,500/year), and we tell you before you commit, not after.</p></div>
+      </div>
+      <div class="faq border-b border-linec py-7">
+        <button class="faq-q w-full flex items-center justify-between gap-5 text-left font-semibold text-lg md:text-2xl tracking-tight">
+          What if I don't like the design?
+          <span class="plus shrink-0 w-11 h-11 rounded-full border border-[#3a3a3a] grid place-items-center text-lg font-normal">+</span>
+        </button>
+        <div class="faq-a text-muted leading-relaxed"><p class="pt-4 max-w-2xl">We don't build until you approve the design preview. You request changes at that stage — we iterate until you're happy.</p></div>
+      </div>
+      <div class="faq border-b border-linec py-7">
+        <button class="faq-q w-full flex items-center justify-between gap-5 text-left font-semibold text-lg md:text-2xl tracking-tight">
+          I only have a Facebook page. Is that enough?
+          <span class="plus shrink-0 w-11 h-11 rounded-full border border-[#3a3a3a] grid place-items-center text-lg font-normal">+</span>
+        </button>
+        <div class="faq-a text-muted leading-relaxed"><p class="pt-4 max-w-2xl">That's enough to start. We pull your info, photos and reviews together, write the missing text with you, and launch in 7 days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="pb-28">
+  <div class="max-w-6xl mx-auto w-[92%]">
+    <div class="reveal relative overflow-hidden bg-panel border border-linec rounded-3xl p-10 md:p-16 text-center">
+      <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(520px 340px at 90% 0%,rgba(255,77,0,.16),transparent 65%);"></div>
+      <h2 class="relative font-extrabold tracking-[-0.035em] text-4xl md:text-6xl">Ready when you are.</h2>
+      <p class="relative mt-4 text-muted text-lg max-w-xl mx-auto">Message us today — get honest advice and a fixed price within 24 hours. සිංහලෙන් ලිව්වත් කමක් නෑ. 😊</p>
+      <div class="relative mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#" class="js-wa inline-flex items-center gap-2 bg-[#1ebe57] hover:bg-[#25d366] text-white font-semibold rounded-full px-7 py-3.5 transition">💬 WhatsApp Us</a>
+        <a href="contact.html" class="inline-flex items-center gap-2 border border-white rounded-full px-7 py-3.5 font-semibold hover:bg-white hover:text-ink transition">Contact Page ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-linec pt-12 pb-10">
+  <div class="text-center font-extrabold tracking-[-0.045em] leading-none text-[#1d1d1d] select-none text-6xl md:text-9xl mb-9">KVISH STUDIO</div>
+  <div class="max-w-6xl mx-auto w-[92%] flex flex-wrap items-center justify-between gap-4 text-muted text-sm">
+    <div class="flex gap-5">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="hover:text-brand transition">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="hover:text-brand transition">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="hover:text-brand transition">LinkedIn</a>
+    </div>
+    <div>© <span class="js-year"></span> Kvish Studio · Founded by <a href="about.html" class="text-brand">Nadun Kvish</a></div>
+    <a href="#" onclick="scrollTo({top:0,behavior:'smooth'});return false;" class="hover:text-white transition">Back to top ↑</a>
+  </div>
+</footer>
+
+<a href="#" class="js-wa fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white text-2xl grid place-items-center shadow-2xl hover:scale-110 transition" aria-label="Chat on WhatsApp">💬</a>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
