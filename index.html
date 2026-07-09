@@ -20,7 +20,7 @@ tailwind.config = { theme: { extend: {
 <body class="bg-ink text-[#F2F2F2] font-sans antialiased">
 
 <!-- ================= NAV ================= -->
-<header class="sticky top-0 z-50 bg-ink/80 backdrop-blur-md border-b border-linec">
+<header class="sticky top-0 z-50 bg-ink/80 backdrop-blur border-b border-linec">
   <div class="max-w-6xl mx-auto w-[92%] h-[76px] flex items-center justify-between">
     <a href="index.html" class="font-extrabold text-xl tracking-tight">Kvish<span class="text-brand">.</span>Studio</a>
     <nav class="hidden md:flex gap-7 text-[15px] text-muted">
@@ -40,17 +40,10 @@ tailwind.config = { theme: { extend: {
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="relative overflow-hidden pb-50">
-  <div class="absolute inset-0 z-0 pointer-events-none">
-    <video 
-        class="absolute inset-0 w-full h-full object-cover blur-[2px] scale-105 opacity-80"
-        autoplay
-        muted
-        loop
-        playsinline>
-        <source src="https://stream.mux.com/NcU3HlHeF7CUL86azTTzpy3Tlb00d6iF3BmCdFslMJYM.m3u8" 
-        type="video.m3u8">
-    </video>
+<section class="relative overflow-hidden pb-50 w-full bg-ink">
+  <div class="absolute inset-0 z-0 pointer-events-none"
+  style="background:radial-gradient(700px 460px at 85% 10%,rgba(255,77,0,.22),transparent 65%),radial-gradient(520px 380px at 5% 95%,rgba(255,77,0,.10),transparent 60%);">
+    
   </div>
   <div class="relative max-w-6xl mx-auto pt-24 pb-20 md:pt-32 md:pb-28">
     <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]">
@@ -186,11 +179,11 @@ tailwind.config = { theme: { extend: {
 </section>
 
 <!-- ================= FAQ (short) ================= -->
-<section class="pb-24">
-  <div class="max-w-6xl mx-auto w-[92%]">
+<section class="pb-24 ">
+  <div class="max-w-6xl mx-auto w-[100%]">
     <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>FAQs</span>
     <h2 class="reveal mt-4 font-bold tracking-[-0.035em] text-4xl md:text-6xl">Questions clients actually ask</h2>
-    <div class="reveal mt-10 max-w-3xl">
+    <div class="reveal mt-10 max-w-6xl">
       <div class="faq open border-b border-linec py-7">
         <button class="faq-q w-full flex items-center justify-between gap-5 text-left font-semibold text-lg md:text-2xl tracking-tight">
           Are these really the final prices?
