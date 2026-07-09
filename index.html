@@ -40,10 +40,19 @@ tailwind.config = { theme: { extend: {
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0 pointer-events-none"
-       style="background:radial-gradient(700px 460px at 85% 10%,rgba(255,77,0,.22),transparent 65%),radial-gradient(520px 380px at 5% 95%,rgba(255,77,0,.10),transparent 60%);"></div>
-  <div class="relative max-w-6xl mx-auto w-[92%] pt-24 pb-20 md:pt-32 md:pb-28">
+<section class="relative overflow-hidden pb-50">
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <video 
+        class="absolute inset-0 w-full h-full object-cover blur-[2px] scale-105 opacity-80"
+        autoplay
+        muted
+        loop
+        playsinline>
+        <source src="https://stream.mux.com/NcU3HlHeF7CUL86azTTzpy3Tlb00d6iF3BmCdFslMJYM.m3u8" 
+        type="video.m3u8">
+    </video>
+  </div>
+  <div class="relative max-w-6xl mx-auto pt-24 pb-20 md:pt-32 md:pb-28">
     <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]">
       <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Design &amp; development studio — Sri Lanka 🇱🇰 · Worldwide 🌍
     </span>
@@ -58,12 +67,12 @@ tailwind.config = { theme: { extend: {
       <a href="pricing.html" class="inline-flex items-center gap-2 bg-brand hover:bg-brandsoft hover:-translate-y-0.5 text-white font-semibold rounded-full px-7 py-3.5 transition">See Prices — No Quote Needed ↗</a>
       <a href="#" class="js-wa inline-flex items-center gap-2 bg-[#1ebe57] hover:bg-[#25d366] hover:-translate-y-0.5 text-white font-semibold rounded-full px-7 py-3.5 transition">💬 WhatsApp Us</a>
     </div>
-    <p class="reveal mt-6 text-muted text-[15px]">සිංහලෙන් හෝ English වලින් — කැමති විදිහට කතා කරමු.</p>
+    <p class="reveal mt-6  text-[15px]">සිංහලෙන් හෝ English වලින් — කැමති විදිහට කතා කරමු.</p>
   </div>
 </section>
 
 <!-- ================= PROMISES ================= -->
-<section class="pb-24">
+<section class="pb-24 pt-12">
   <div class="max-w-6xl mx-auto w-[92%]">
     <span class="reveal inline-flex items-center gap-2.5 text-muted text-[15px]"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>The Kvish Promise</span>
     <h2 class="reveal mt-4 font-bold tracking-[-0.035em] leading-tight text-4xl md:text-6xl">Four things clients hate.<br>Four things we fixed.</h2>

@@ -1,9 +1,6 @@
-/* ==========================================================
-   KVISH STUDIO — shared script
-   SETTINGS: මේ lines 2 විතරක් වෙනස් කරන්න 👇
-   ========================================================== */
-const WHATSAPP_NUMBER = "94771234567";           // ඔයාගේ WhatsApp number (94 වලින්, + නැතුව)
-const MY_EMAIL        = "hello@kvishstudio.com"; // ඔයාගේ email එක
+
+const WHATSAPP_NUMBER = "94726514600";           // ඔයාගේ WhatsApp number (94 වලින්, + නැතුව)
+const MY_EMAIL        = "nadunkavishka20000@gmail.com"; // ඔයාගේ email එක
 
 /* ---------- WhatsApp links (anything with class .js-wa) ---------- */
 const waBase = `https://wa.me/${WHATSAPP_NUMBER}`;
